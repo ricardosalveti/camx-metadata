@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2012 The Android Open Source Project
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: Apache-2.0 AND BSD-3-Clause-Clear
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,19 @@
  */
 
 /*
- * Modified by Qualcomm Technologies, Inc.: replaced the <log/log.h>
- * include with no-op ALOGE() and android_errorWriteLog() macros to build
- * on embedded Linux.
+ * Changes from Qualcomm Technologies, Inc. are provided under the following
+ * license:
+ *
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ *
+ * Changes from the AOSP platform/system/media version of this file
+ * (android17-release), to build it as a standalone library on embedded
+ * Linux, where the Android libcutils and liblog are not available:
+ * - Replaced the #include <log/log.h> with #include <stddef.h>.
+ * - Added no-op definitions of the ALOGE() and android_errorWriteLog()
+ *   logging macros, previously provided by <log/log.h>. Errors reported
+ *   through these macros are not logged.
  */
 
 #define LOG_TAG "camera_metadata"

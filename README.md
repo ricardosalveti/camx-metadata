@@ -61,6 +61,10 @@ and is distributed under the following licenses:
   licensed under the [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html).
   See [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt) for the full license
   text. Files modified from AOSP carry a notice describing the change.
+  Where those changes were written by Qualcomm Technologies, Inc., they are
+  licensed under the
+  [BSD-3-Clause-Clear License](https://spdx.org/licenses/BSD-3-Clause-Clear.html),
+  and the file is tagged `SPDX-License-Identifier: Apache-2.0 AND BSD-3-Clause-Clear`.
 - The build files written for this project (`CMakeLists.txt` and
   `camx_metadata.pc.in`) are licensed under the
   [BSD-3-Clause-Clear License](https://spdx.org/licenses/BSD-3-Clause-Clear.html).

@@ -1,6 +1,6 @@
 /*
  * Copyright 2014 The Android Open Source Project
- * SPDX-License-Identifier: Apache-2.0
+ * SPDX-License-Identifier: Apache-2.0 AND BSD-3-Clause-Clear
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,19 @@
  */
 
 /*
- * Modified by Qualcomm Technologies, Inc.: removed the ANDROID_API
- * markers and the <cutils/compiler.h> include to build on embedded Linux.
+ * Changes from Qualcomm Technologies, Inc. are provided under the following
+ * license:
+ *
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ *
+ * Changes from the AOSP platform/system/media version of this file
+ * (android17-release), to build it as a standalone library on embedded
+ * Linux, where the Android libcutils and liblog are not available:
+ * - Removed the #include <cutils/compiler.h>.
+ * - Removed the ANDROID_API markers (defined by <cutils/compiler.h> as
+ *   default symbol visibility) from all declarations. The library is
+ *   built with default visibility, so the symbols are still exported.
  */
 
 #ifndef SYSTEM_MEDIA_PRIVATE_INCLUDE_CAMERA_METADATA_HIDDEN_H
