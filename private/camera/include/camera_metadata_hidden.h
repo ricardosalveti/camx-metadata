@@ -15,6 +15,11 @@
  * limitations under the License.
  */
 
+/*
+ * Modified by Qualcomm Technologies, Inc.: removed the ANDROID_API
+ * markers and the <cutils/compiler.h> include to build on embedded Linux.
+ */
+
 #ifndef SYSTEM_MEDIA_PRIVATE_INCLUDE_CAMERA_METADATA_HIDDEN_H
 #define SYSTEM_MEDIA_PRIVATE_INCLUDE_CAMERA_METADATA_HIDDEN_H
 

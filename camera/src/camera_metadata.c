@@ -15,6 +15,12 @@
  * limitations under the License.
  */
 
+/*
+ * Modified by Qualcomm Technologies, Inc.: replaced the <log/log.h>
+ * include with no-op ALOGE() and android_errorWriteLog() macros to build
+ * on embedded Linux.
+ */
+
 #define LOG_TAG "camera_metadata"
 
 #include <system/camera_metadata.h>
